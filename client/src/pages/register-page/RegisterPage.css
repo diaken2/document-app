@@ -1,0 +1,39 @@
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.registration-form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.not-have-account {
+  display: flex;
+  gap: 10px;
+}
+.not-have-account-reg {
+  display: flex;
+  gap: 20px;
+}
+.registration-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.registration-form button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,100 @@
+/* App.css */
+.app {
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* Распределение пространства между элементами */
+  padding: 1rem;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень для глубины */
+}
+img {
+  width: 60px;
+  height: 60px;
+}
+.main-container {
+  display: flex;
+  height: 100%;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold; /* Жирный шрифт для логотипа */
+  margin-left: 1rem; /* Отступ слева */
+}
+
+.user-email {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+.user-email:hover {
+  color: #aaa; /* Цвет при наведении */
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для выпадающего меню */
+  opacity: 0; /* Начальная прозрачность */
+  visibility: hidden; /* Скрыть меню */
+  transition: opacity 0.3s, visibility 0.3s; /* Плавное появление */
+}
+
+.user-email:hover .dropdown-menu {
+  opacity: 1; /* Полная видимость при наведении */
+  visibility: visible; /* Показать меню */
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  width: 200px;
+  padding: 1rem;
+  height: 100%;
+  box-shadow: inset -1px 0 5px rgba(0, 0, 0, 0.1); /* Внутренняя тень для боковой панели */
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 0.5rem 0;
+  transition: background-color 0.3s, padding-left 0.3s; /* Плавные переходы для ссылок */
+}
+
+.sidebar nav ul li a:hover {
+  background-color: #ddd; /* Цвет фона при наведении */
+  padding-left: 1rem; /* Сдвиг вправо при наведении */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 1rem;
+  transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+.content:hover {
+  background-color: #f9f9f9; /* Цвет фона при наведении */
+}
